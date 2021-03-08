@@ -1,0 +1,55 @@
+Feature File:Bmail Login
+1. Scenario Login with valid Email address and valid password
+      Given I am on the login page
+      When I type valid email address: vipulpatel@Bmail.com 
+      And I type valid password: vipul12345
+      And Click Login button
+      Then I should see Login successful
+2. Scenario Login with invalid email  address and valid password
+     Given I am on the login page
+     When I type invalid email address: vipul12@Bmail.com
+     And I type valid password: vipul12345
+     And Click Login button
+     Then I should not able to login
+3. Scenario Login with valid email  address and invalid password
+     Given I am on the login page
+      When I type valid email address: vipulpatel@Bmail.com 
+     And I type invalid password: vipul007
+     And Click Login button
+    Then I should not able to login
+4. Scenario Login with Empty email  address and valid password
+     Given I am on the login page
+     When I not type  email address: Empty
+     And I type valid password: vipul12345
+     And Click Login button
+     Then I should not able to login
+5. Scenario Login with valid email  address and Empty password
+     Given I am on the login page
+     When I type valid  email address: : vipulpatel@Bmail.com
+     And I not type  password: Empty
+     And Click Login button
+     Then I should not able to login
+6. Scenario Login with Empty email  address and Empty password
+     Given I am on the login page
+     When I not type email address: : Empty
+     And I not type  password: Empty
+     And Click Login button
+     Then I should not able to login
+7. Scenario Login with invalid email  address and invalid password
+     Given I am on the login page
+     When I type invalid  email address: : vipulpatel123@Bmail.com
+     And I type invalid password: vipul8999
+     And Click Login button
+     Then I should not able to login
+8. Scenario Login with Empty email  address and invalid password
+      Given I am on the login page
+      When I not type email address: : Empty
+      And I type invalid password: vipul3232
+      And Click Login button
+      Then I should not able to login
+9.  Scenario Login with invalid email  address and Empty password
+       Given I am on the login page
+       When I type invalid  email address: : vipulpatel444@Bmail.com
+       And I not type  password: Empty
+      And Click Login button
+      Then I should not able to login

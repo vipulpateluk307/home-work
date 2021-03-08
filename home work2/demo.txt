@@ -1,0 +1,18 @@
+Demo_Register 001	
+To Verify User should be able to Register	
+" 1. Open microsoft Edge Browser 
+2. Type URL 
+3. click on Register  
+4. Type full name 
+5. Type Last name
+ 6. Type Email 
+7. Type Password
+ 8. Type Confirm password 
+ 9. Click on Register"	"
+* url - https://demo.nopcommerce.com/register?returnUrl=%2Fdigital-downloads 
+*full name: vipul *Last name: patel 
+*Email: vipulpateluk307@gmail.com 
+*Password: 123456 
+*Confirm password: 123456"	
+user should be Register success fully (Your registration completed)	
+user should be  Register success fully (Your registration completed)
